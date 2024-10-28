@@ -18,9 +18,12 @@ const minSeniorAge = 65;
 // 2 - Define unknow variables
 
 let ticketKm;
+let ticketPrice;
+
 let userAge;
 
-let ticketPrice;
+let discount;
+let ticketDiscounted;
 
 // 3 - Define user inputs
 
@@ -36,5 +39,11 @@ ticketPrice = ticketKm * pricePerKm;
 console.log(ticketPrice);
 
 // 5 - Apply discount and output final price in human numbers
+
+if (userAge <= maxJuniorAge) {
+    discount = ((ticketPrice * juniorDiscount) / 100);
+    ticketDiscounted = ticketPrice - discount;
+    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€`);
+}  
 
 

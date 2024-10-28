@@ -26,11 +26,14 @@ let ticketPrice;
 
 ticketKm = parseInt(prompt("Inserire i Km del viaggio"));
 console.log(ticketKm);
+
 userAge = parseInt(prompt("Inserire l'età del passeggero"));
 console.log(userAge);
 
 // 4 - Calculate ticket price
 
+ticketPrice = ticketKm * pricePerKm;
+console.log(ticketPrice);
 
 // 5 - Apply discount and output final price in human numbers
 

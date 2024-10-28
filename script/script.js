@@ -6,11 +6,11 @@
     - va applicato uno sconto del 40% per gli over 65.
     - L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. */
 
-"use strict"
+"use strict";
 
 // 0 - Clear the console
 
-console.clear()
+console.clear();
 
 // 1 - Define known variables
 
@@ -51,22 +51,22 @@ if (userAge <= maxJuniorAge) {
     discount = ((ticketPrice * juniorDiscount) / 100);
     ticketDiscounted = ticketPrice - discount;
     //
-    console.log(`Applicazione sconto junior del ${juniorDiscount}%.`)
+    console.log(`Applicazione sconto junior del ${juniorDiscount}%.`);
     console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€.`);
     //
 } else if (userAge >= minSeniorAge) {
     discount =((ticketPrice * seniorDiscount) / 100);
     ticketDiscounted = ticketPrice - discount;
     //
-    console.log(`Applicazione sconto senior del ${seniorDiscount}%.`)
-    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€.`)
+    console.log(`Applicazione sconto senior del ${seniorDiscount}%.`);
+    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€.`);
     //
 } else {
     console.log(`Il prezzo del tuo biglietto è: ${ticketPrice.toFixed(2)}€.`);
-}
+};
 
 
 // 6 - Final print message and thanks
 
-console.log("Stampa del biglietto in corso...")
-console.log("Grazie per aver scelto il nostro servizio. Buon viaggio!")
+console.log("Stampa del biglietto in corso...");
+console.log("Grazie per aver scelto il nostro servizio. Buon viaggio!");

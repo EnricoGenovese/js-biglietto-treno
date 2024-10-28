@@ -7,11 +7,21 @@
 
 // 1 - Define known variables
 
+const pricePerKm = 0.21;
+
+const juniorDiscount = 20;
+const maxJuniorAge = 18;
+
+const seniorDiscount = 40;
+const minSeniorAge = 65;
 
 // 2 - Define unknow variables
+
 
 
 // 3 - Define user inputs
 
 
+
 // 4 - Calculate ticket price, considering age and discount if applicable
+

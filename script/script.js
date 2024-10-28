@@ -17,7 +17,10 @@ const minSeniorAge = 65;
 
 // 2 - Define unknow variables
 
+let ticketKm;
+let userAge;
 
+let ticketPrice;
 
 // 3 - Define user inputs
 

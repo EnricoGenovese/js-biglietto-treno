@@ -9,11 +9,11 @@
 
 const pricePerKm = 0.21;
 
-const juniorDiscount = 20;
-const maxJuniorAge = 18;
+const juniorDiscount = 20;  // percentage
+const maxJuniorAge = 18;    // max age; needs <=
 
-const seniorDiscount = 40;
-const minSeniorAge = 65;
+const seniorDiscount = 40;  // percentage
+const minSeniorAge = 65;    // min age; needs >=
 
 // 2 - Define unknow variables
 
@@ -43,12 +43,14 @@ ticketPrice = ticketKm * pricePerKm;
 if (userAge <= maxJuniorAge) {
     discount = ((ticketPrice * juniorDiscount) / 100);
     ticketDiscounted = ticketPrice - discount;
-    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€`);
+    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€.`);
 }  else if (userAge >= minSeniorAge) {
     discount =((ticketPrice * seniorDiscount) / 100);
     ticketDiscounted = ticketPrice - discount;
-    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€`)
+    console.log(`Il prezzo del tuo biglietto scontato è: ${ticketDiscounted.toFixed(2)}€.`)
 } else {
-    console.log(`Il prezzo del tuo biglietto è: ${ticketPrice.toFixed(2)}€`);
+    console.log(`Il prezzo del tuo biglietto è: ${ticketPrice.toFixed(2)}€.`);
 }
 
+console.log("Stampa del biglietto in corso...")
+console.log("Grazie per aver scelto il nostro servizio. Buon viaggio!")

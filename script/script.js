@@ -17,7 +17,7 @@ console.clear();
 const pricePerKm = 0.21;
 
 const juniorDiscount = 20;  // percentage
-const maxJuniorAge = 18;    // max age; needs <=
+const maxJuniorAge = 17;    // max age; needs <=
 
 const seniorDiscount = 40;  // percentage
 const minSeniorAge = 65;    // min age; needs >=
